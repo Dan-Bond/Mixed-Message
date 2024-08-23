@@ -1,14 +1,36 @@
 <html>
     <head>  
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="C:\repository\git\Mixed Message\css\style.css">
                <title> Messages</title>
     </head>
     <body>
 
        <h1>Mixed Messages</h1>
-        <p>Ready recieve your Message?</p>
+        <p>The mail is a mess!So you might recieve a different message.</p>
+        <p>Ready to recieve your Message?</p>
           <button id="myButton">Open your Message?</button>
-          <script scr="script.js"></script>   
+            
        <div id="result"></div>
+
+       <script scr="C:\repository\git\Mixed Message\js\script.js">
+
+function getString() {
+    return "why won't this work.Test wont work my butt";
+   };
+
+ function handleButtonClick() {
+
+     const result = getString();
+
+     const resultElement = document.getElementById('result');
+
+     resultElement.textContent = result;
+   };
+
+ document.addEventListener('DOMContentLoaded', (event) => {
+ document.getElementById('myButton').addEventListener('click', handleButtonClick);
+   });
+       </script> 
+
     </body>
 </html>
